@@ -14,10 +14,8 @@ html{
 
 .logo{
   width: 4rem;
-  /*display: block;*/
   border:4px solid lightgray;
   border-radius: 100%;
-  /*padding: 2rem;*/
   margin: 1rem 5rem 0;
 }
 
@@ -25,7 +23,6 @@ html{
   color: white;
   font-size: 1rem;
   padding-left: 2rem;
-  /*padding-bottom: 1rem;*/
   /*+ptt todo add font*/
 }
 
@@ -36,11 +33,7 @@ html{
   transition-timing-function: ease;
   background-color:white;
   color:green;
-  /*transform: rotate(30deg);
-  box-shadow: 2px 2px 1px orange;*/
-
 /*+ptt todo add style here */
-
 }
 
 .logo:active{
@@ -52,8 +45,6 @@ html{
   background-color:white;
   color:blue;
   border-radius: 100%;
-  /*box-shadow: 2px 2px 1px orange;
-  transform: rotate(-35deg);*/
 
   /*+ptt todo add style*/
 }
@@ -91,36 +82,53 @@ html{
   /*+ptt todo add style*/
 }
 
-/*.menu-item:hover{
-  position: relative;
-  transition-property: background-color, color;
 
-  transition-timing-function: ease;
-  background-color:white;
-  color:green;
-  border-radius: 50%;
-  box-shadow: 2px 2px 1px orange;
+.flex-grid {
+  border: 1px solid #ccc;
+  margin: 0 auto;
+  width: 100%; /*95%;*/
+  display: flex;
+  /*flex-direction: row;*/
+  flex-wrap: wrap;
+  list-style: none;
+  justify-content: space-around;
+  align-items: flex-start;
+  /*margin: 0;*/
+  /*padding: 0;*/
+  /*justify-content:flex-start;*/
+}
+
+
+/* Base classes for all media */
+/*.container--fit > .item {
+  flex: 1;
+}
+.container--full > .item {
+  flex: 0 0 100%;
+}
+.container--1of2 > .item {
+  flex: 0 0 50%
+}
+.container--1of3 > .item {
+  flex: 0 0 33.3333%
+}
+.container--1of4 > .item {
+  flex: 0 0 25%
 }*/
 
-.container {
-  border: 1px solid #ccc;
-  /*background: white;*/
-  margin: 0 auto;
-  width: 95%;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  /*justify-content:flex-start;*/
-  align-items: stretch;
+
+/* grid style */
+/*.container--top{
+  align-items: flex-start;
 }
 
-.content-body{
-  color: #303235;
-  background:  #e4f6ff ;/*e2f4fd #D5E3E5;  #86a09f;*/
-  /*border-radius: 5px;*/
-  padding-top: 0.5rem;
+.container--gutters {
+  margin: -1em 0 0 -1em;
 }
+.container--gutters > .item {
+  padding: 1em 0 0 1em;
+}
+*/
 
 
 /* title section beginning of each page content*/
@@ -128,53 +136,27 @@ html{
   background: gray ;
   padding-left: 2rem;
   width: 100%;
-  color: white; /*#292A27;*/
+  color: white;
   line-height: 0.5;
 }
 
-.item {
+/* grid-cell */
+.col {
   display: inline-block;
-  /*letter-spacing: 0px;*/
-
+  align-self: flex-start;
+  width: 48%;
+  padding: 0.5rem;
 }
 
-.item h3{
+.col img{
+  width: 100%;
+}
+
+.col h3{
   background: lightgray;
   height: 2rem;
   font-size: 1.1rem;
   padding: 0.2rem;
-}
-
-
-/* content half left side*/
-.left-content {
-  color: #303235;
-  padding-left: 1rem;
-  width: 49%;
-  /*border: 1px solid darkgray;*/
-}
-
-.left-content img{
-  width: 90%;
-}
-
-
-/* content half right side*/
-.right-content {
-  color: #303235;
-  padding-left: 1rem;
-  width: 49%;
-  /*border: 1px solid darkgray;*/
-  /*line-height: 0.4;
-  text-align: center;*/
-  /*flex-direction: column;*/
-  /*flex-flow: column;*/
-  /*flow-from: inherit;*/
-  /*flex: auto;*/
-}
-
-.right-content img{
-  width: 90%;
 }
 
 
@@ -188,7 +170,6 @@ html{
   width: 100%;
   margin: auto;
 }
-
 
 /* class selection */
 .class-type{
@@ -206,7 +187,6 @@ html{
   color: white;
 }
 
-
 .class-type a:active{
   text-decoration: none;
   color: #292A27;
@@ -222,11 +202,32 @@ html{
 }
 
 
+/* misc general */
+body p{
+  font-family: 'Courgette', cursive;
+}
 
-/* bottom footer */
+.landing-image{
+  width: 50%;
+  display: block;
+  border:4px solid lightgray;
+  margin: auto;
+  border-radius: 10%;
+}
+
+article > h4 {
+  margin-left: 1rem;
+}
+
+article > p {
+  margin-left: 1rem;
+}
+
+
+
+/* footer */
 .footer{
   clear: both;
-  /*text-align: center;*/
   color: white;
   background-color: rgb(128, 0, 0) ;
   padding:0.1rem 1rem 0.1rem;
@@ -244,93 +245,6 @@ html{
   color:inherit;
 }
 
-
 .tab{
   padding-left: 5rem;
-}
-
-
-
-
-
-
-
-/*##################################################################*/
-body {
-  background-color: white; /*#D5E3E5;*/
-  background-blend-mode:color-burn;
-  padding-left: 0.2rem;
-  padding-right: 0.2rem;
-
-}
-
-body h1{
-  font-family: 'BenchNine', cursive;
-}
-
-body p{
-  font-family: 'Courgette', cursive;
-}
-
-.landing-image{
-  width: 50%;
-  display: block;
-  border:4px solid lightgray;
-  margin: auto;
-  /*border-radius: 5%;*/
-
-}
-
-.project-ith{
-  font-family: 'Angkor', cursive;
-  padding: 0.3rem;
-  border-radius: 10%;
-  box-shadow: 2px 2px 1px orange;
-
-}
-
-.project-ith:nth-child(odd){
-	width: 50%;
-	background:  #ccddff;
-}
-.project-ith:nth-child(even){
-	width: 50%;
-	background: #99bbff ;
-}
-
-.project-ith:hover{
-  position: relative;
-  transition-property: background-color, color;
-  transition-duration: 1s;
-  transition-timing-function: ease;
-  background-color:rgb(39, 140, 109);
-  color:white;
-  transform: rotate(360deg);
-  box-shadow: 2px 2px 1px orange;
-}
-
-
-.product{
-  white-space: nowrap;
-  list-style: none;
-}
-
-.product-image{
-  width: 200px;
-  height: 200px;
-  border:3px solid lightgray;
-}
-
-
-
-article > h4 {
-  margin-left: 1rem;
-}
-
-article > p {
-  margin-left: 1rem;
-}
-
-.indent-tab{
-  margin-left: 60px;
 }
