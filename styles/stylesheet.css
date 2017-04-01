@@ -93,50 +93,20 @@ html{
   list-style: none;
   justify-content: space-around;
   align-items: flex-start;
-  /*margin: 0;*/
-  /*padding: 0;*/
-  /*justify-content:flex-start;*/
 }
-
-
-/* Base classes for all media */
-/*.container--fit > .item {
-  flex: 1;
-}
-.container--full > .item {
-  flex: 0 0 100%;
-}
-.container--1of2 > .item {
-  flex: 0 0 50%
-}
-.container--1of3 > .item {
-  flex: 0 0 33.3333%
-}
-.container--1of4 > .item {
-  flex: 0 0 25%
-}*/
-
-
-/* grid style */
-/*.container--top{
-  align-items: flex-start;
-}
-
-.container--gutters {
-  margin: -1em 0 0 -1em;
-}
-.container--gutters > .item {
-  padding: 1em 0 0 1em;
-}
-*/
 
 
 /* grid-cell */
 .col {
-  display: inline-block;
-  align-self: flex-start;
+  /*display: inline-block;*/
+  /*align-self: flex-start;
   width: 48%;
-  padding: 0.5rem;
+  padding: 0.5rem;*/
+
+  flex: 0 0 48%;
+  padding-left: 0.1rem 0.6rem 0.2rem;*/
+
+
 }
 
 .col img{
@@ -147,14 +117,16 @@ html{
   background: lightgray;
   height: 2rem;
   font-size: 1.1rem;
-  padding: 0.2rem;
+  padding: 0.2rem 0.5rem 0;
 }
 
+.col> p{
+  padding: 0 1rem 0.5rem;
+}
 
 .col-1of3{
-  display: inline-block;
   flex: 0 0 32%;
-  padding-left: 0.1rem 0.6rem 0.2rem;
+  padding-left: 0.1rem 0.6rem 0.2rem;*/
 }
 
 .col-1of3 > h4{
@@ -168,31 +140,16 @@ html{
   padding: 0 1rem 0.5rem;
 }
 
-@media (min-width: 48em) {
-  .col-1of3{
-    width: 100%;
-  }
-}
-
-
-
 
 .instructor{
   background: #ccddff;
   height: 1.2rem;
   font-size: 1rem;
   padding: 0.2rem 1rem 1.5rem;
-  margin: 3rem 0;
+  margin: 1rem 0;
   align-self: flex-end;
 }
 
-/*h5:nth-child(2){
-	background:  #ccddff;
-}*/
-
-/*.col + .instructor:nth-child(2){
-	background: red ;
-}*/
 
 .instructor-img{
   border-radius: 30%;
@@ -201,15 +158,9 @@ html{
 
 }
 
-/*div ~ img:nth-child(2){
-  border:3px solid red;
-}*/
-
-
-
 
 /* content full width */
-.full-content {
+.flex-grid > .full-content {
   color: #303235;
   padding: 0 1rem 0;
   width: 100%;
@@ -249,6 +200,19 @@ html{
   box-shadow: 2px 2px 1px rgb(128, 0, 0);
 }
 
+@media (max-width: 500px) {
+  .flex-grid {
+    display: block;
+    .col , .col-1of3 {
+      width: 100%;
+      margin: 0 0 10px 0;
+    }
+  }
+}
+
+
+
+
 
 /* misc general */
 body p{
@@ -279,7 +243,6 @@ article > h4 {
 article > p {
   margin-left: 1rem;
 }
-
 
 
 /* footer */
