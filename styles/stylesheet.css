@@ -159,6 +159,33 @@ html{
   padding: 0.2rem;
 }
 
+.instructor{
+  background: #ccddff;
+  height: 1.2rem;
+  font-size: 1rem;
+  padding: 0.2rem 1rem 1.5rem;
+  margin: 1rem;
+}
+
+h5:nth-child(2){
+	background:  #ccddff;
+}
+
+/*.col + .instructor:nth-child(2){
+	background: red ;
+}*/
+
+.instructor-img{
+  border-radius: 30%;
+  border:3px solid orange;
+}
+
+/*div ~ img:nth-child(2){
+  border:3px solid red;
+}*/
+
+
+
 
 /* content full width */
 .full-content {
