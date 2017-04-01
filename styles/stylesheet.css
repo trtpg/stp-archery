@@ -131,15 +131,6 @@ html{
 */
 
 
-/* title section beginning of each page content*/
-.page-title{
-  background: gray ;
-  padding-left: 2rem;
-  width: 100%;
-  color: white;
-  line-height: 0.5;
-}
-
 /* grid-cell */
 .col {
   display: inline-block;
@@ -159,12 +150,39 @@ html{
   padding: 0.2rem;
 }
 
+
+.col-1of3{
+  display: inline-block;
+  flex: 0 0 32%;
+  padding-left: 0.1rem 0.6rem 0.2rem;
+}
+
+.col-1of3 > h4{
+  background: #ccddff;
+  height: 1.1rem;
+  font-size: 1rem;
+  padding: 0.2rem 1.1rem 1.5rem;
+}
+
+.col-1of3 > p{
+  padding: 0 1rem 0.5rem;
+}
+
+@media (min-width: 48em) {
+  .col-1of3{
+    width: 100%;
+  }
+}
+
+
+
+
 .instructor{
   background: #ccddff;
   height: 1.2rem;
   font-size: 1rem;
   padding: 0.2rem 1rem 1.5rem;
-  margin: 2rem 0;
+  margin: 3rem 0;
   align-self: flex-end;
 }
 
@@ -235,6 +253,15 @@ html{
 /* misc general */
 body p{
   font-family: 'Courgette', cursive;
+}
+
+/* title section beginning of each page content*/
+.page-title{
+  background: gray ;
+  padding-left: 2rem;
+  width: 100%;
+  color: white;
+  line-height: 0.5;
 }
 
 .landing-image{
