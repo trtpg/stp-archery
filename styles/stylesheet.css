@@ -108,10 +108,9 @@ html{
 }
 
 .col-1of2 h3{
-  background: lightgray;
-  height: 2rem;
-  font-size: 1.1rem;
-  padding: 0.2rem 0.5rem 0;
+  background: #ccddff;
+  font-size: 1.2rem;
+  padding: 0.2rem 0.5rem 0.2rem;
 }
 
 .col-1of2> p{
