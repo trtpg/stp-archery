@@ -97,9 +97,20 @@ html{
 
 
 /* grid-cell */
+.col-1of1 {
+  flex: 0 0 100%;
+}
+
+.col-1of1 img{
+  width: 100%;
+}
+
+.col-1of1> p{
+  padding: 0 1rem 0.5rem;
+}
+
 .col-1of2 {
   flex: 0 0 48%;
-  padding-left: 0.1rem 0.6rem 0.2rem;
 }
 
 .col-1of2 img{
@@ -118,7 +129,6 @@ html{
 
 .col-1of3{
   flex: 0 0 32%;
-  padding-left: 0.1rem 0.6rem 0.2rem;
 }
 
 .col-1of3 > h4{
@@ -131,6 +141,12 @@ html{
 .col-1of3 > p{
   padding: 0 1rem 0.5rem;
 }
+
+/* Adding gutters to the grid */
+.grid-guttered > [class^="col-"] {
+  padding-left: 0.1rem 0.6rem 0.2rem;
+}
+
 
 .instructor{
   background: #ccddff;
@@ -149,15 +165,18 @@ html{
 
 
 /* content full width */
-.flex-grid > .full-content {
+/*.flex-grid > .full-content { */
   color: #303235;
-  padding: 0 1rem 0;
-  width: 100%;
+  /*padding: 0 1rem 0;*/
+  /*width: 100%;*/
+  /*flex: 0 0 98%;*/
+/*
 }
 .full-content img{
   width: 100%;
   margin: auto;
 }
+*/
 
 /* classes selection */
 .class-type{
