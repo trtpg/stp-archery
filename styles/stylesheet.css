@@ -142,11 +142,10 @@ html{
   padding: 0 1rem 0.5rem;
 }
 
-/* Adding gutters to the grid */
+/* gutters to the grid */
 .grid-guttered > [class^="col-"] {
   padding-left: 0.1rem 0.6rem 0.2rem;
 }
-
 
 .instructor{
   background: #ccddff;
@@ -163,20 +162,6 @@ html{
   margin: 1rem 0;
 }
 
-
-/* content full width */
-/*.flex-grid > .full-content { */
-  color: #303235;
-  /*padding: 0 1rem 0;*/
-  /*width: 100%;*/
-  /*flex: 0 0 98%;*/
-/*
-}
-.full-content img{
-  width: 100%;
-  margin: auto;
-}
-*/
 
 /* classes selection */
 .class-type{
